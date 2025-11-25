@@ -1135,11 +1135,11 @@ function createWhatsAppMessage(formData) {
     let message = `🚀 *NOUVELLE DEMANDE DE PROJET* 🚀\n\n`;
     message += `*Nom:* ${formData.get('name')}\n`;
     message += `*Email:* ${formData.get('email')}\n`;
-    message += `*WhatsApp:* ${formData.get('whatsapp')}\n`;
+    message += `*Numéro WhatsApp:* ${formData.get('whatsapp')}\n`;
     message += `*Type de projet:* ${formData.get('project-type')}\n\n`;
     
     if (formData.get('budget')) {
-        message += `*Budget:* ${formData.get('budget')}\n`;
+        message += `*Budget:* ${formData.get('budget')FCFA}\n`;
     }
     
     if (formData.get('timeline')) {
